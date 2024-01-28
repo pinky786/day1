@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.header_text {
+  color: #1D2F3F;
+}
+
+.gif_container {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #1D2F3F;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e4465;
+}
+
+/* Style the No button differently */
+#noButton {
+     position: relative;
+  background-color: #1D2F3F;
+}

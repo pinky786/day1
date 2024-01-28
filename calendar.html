@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="gif_container">
+            <img
+                src="1-ezgif.com-resize.gif"
+                alt="Cute animated illustration"
+            />
+        </div>
+
+        <div>
+            <h1>Select a Date and Time</h1>
+            <br>  
+            <br>  
+        </div>
+
+        <div>
+            Place Name: <input type="text" id="placeName" placeholder="Choice Place" required>  
+            <br>  
+            <br>  
+            Date of Joining: <input type="date" id="joiningDate">   
+        </div>
+
+        <br>  
+        <br>  
+
+        <div>
+            <button type="submit" name="btn" onclick="showData()">Submit</button>  
+        </div>
+    </div>
+
+    <script>
+        function showData() {
+            var placeName = document.getElementById('placeName').value;
+            var joiningDate = document.getElementById('joiningDate').value;
+
+            var message = "Place Name: " + placeName + "\nDate of Joining: " + joiningDate;
+            alert(message);
+        }
+    </script>
+</body>
+</html>
